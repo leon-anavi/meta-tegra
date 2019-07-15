@@ -3,7 +3,7 @@
 SOC_FAMILY = "tegra186"
 
 require conf/machine/include/soc-family.inc
-require conf/machine/include/arm/arch-armv8a.inc
+require conf/machine/include/arm/arch-armv8.inc
 
 KERNEL_IMAGETYPE = "Image"
 
@@ -40,6 +40,8 @@ PREFERRED_PROVIDER_drm = "libdrm-tegra-shim"
 PREFERRED_PROVIDER_u-boot-fw-utils = "u-boot-fw-utils-tegra"
 PREFERRED_RPROVIDER_u-boot-fw-utils = "u-boot-fw-utils-tegra"
 PREFERRED_PROVIDER_cboot ?= "cboot-prebuilt"
+
+PREFERRED_VERSION_xserver-xorg = "1.19%"
 
 require conf/machine/include/tegra-common.inc
 
